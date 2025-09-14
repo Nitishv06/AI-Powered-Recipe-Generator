@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4CAF50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#recipe-output {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#recipe-output h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+#recipe-text {
+    white-space: pre-wrap;
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-size: 1rem;
+    line-height: 1.6;
+}
